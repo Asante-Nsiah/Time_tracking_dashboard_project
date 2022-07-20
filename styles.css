@@ -3,32 +3,14 @@ body{
     font-family: 'Rubik', sans-serif;;
 }
 
-.container{
-    width: 305px;
-    margin: 0 auto 0 auto;
-    
-    
-}
+
 
 .profile{
     background-color:hsl(246, 80%, 60%); 
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#profile-report{
-    font-size: 10px;
-    color: hsl(236, 100%, 87%);
-    margin-bottom:0 ;
-    margin-top: 25px;
-}
-#profile-name{
-    margin-top: 0;
-    font-size: 18px;
-}
-.profile-text{
-    color: white;
 
-}
 .profile-text:hover{
     cursor: pointer;
 }
@@ -62,22 +44,17 @@ body{
     font-size: 25px;
     margin-bottom: 0;
 }
-#past-week{
-    font-size: 11px;
-}
+
 
 .work-card, .work-details:hover{
     cursor: pointer;
 }
 
-#hours{
-    font-size: 30px;
-    margin: 0;
-}
+
 
 /* Mobile screen */
 
-@media only screen and (min-width: 375px) and (max-width: 600px) {
+@media only screen and (min-width: 360px) and (max-width: 800px) {
    .pic{
     width: 50px;
     height: 50px;
@@ -86,17 +63,14 @@ body{
     background-color: white;
     margin-top: 30px;
     margin-left: 30px;
-
-    /* position: absolute;
-    top: 40px;
-    left: 60px; */
-    
    }
 
+   .container{
+    width: 305px;
+    margin: 0 auto 0 auto;
+}
    .profile-text{
     margin-top: 15px;
-   
-
    }
     img{
         
@@ -151,5 +125,131 @@ body{
     .second-detail{
         text-align: right;
         margin-right: 20px;
+    }
+    #profile-report{
+        font-size: 10px;
+        color: hsl(236, 100%, 87%);
+        margin-bottom:0 ;
+        margin-top: 25px;
+    }
+    #profile-name{
+        margin-top: 0;
+        font-size: 18px;
+    }
+    .profile-text{
+        color: white;
+    }
+    #past-week{
+        font-size: 11px;
+    }
+    #hours{
+        font-size: 30px;
+        margin: 0;
+    }
+}
+
+/* Other screens */
+@media only screen and (min-width: 801px){
+    .container{
+        width: 1000px;
+        margin: 100px auto 0 auto;
+        display: grid;
+        grid-template-columns: 0fr 1fr; 
+    }
+    
+    .menu{
+        width: 235px;
+        height: 450px;
+        border-radius: 20px; 
+        margin-right: 20px;
+    }
+    
+    .pic{
+        width: 70px;
+        height: 70px;
+        padding: 3px;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    img{ 
+        width: 70px;
+        height: 70px;
+    }
+    .profile{
+        width: 235px;
+        height: 300px;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+    }
+    #profile-report{
+        font-size: 10px;
+        color: hsl(236, 100%, 87%);
+        margin-bottom:0 ;
+        margin-top: 25px;
+    }
+    #profile-name{
+        margin-top: 0;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .profile-text{
+        color: white;
+        margin-top: 115px;
+        margin-left: -80px;
+        
+    }
+    .time-period{
+        height: 120px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        list-style: none;
+        color: hsl(236, 100%, 87%);
+    }
+    .menu-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .work-details{
+        background-color:hsl(235, 46%, 20%) ;
+        border-radius: 20px;
+        height: 172px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: -30px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .work-card{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        border-radius: 20px;
+        height: 215px;  
+    }
+    #design-icon{
+        width: 235px;
+        text-align: right;
+      
+    }
+    #past-week{
+        font-size: 11px;
+        margin-top: 80px;
+        margin-left: -100px;
+    }
+    #three-dot{
+        text-align: right;
+        margin-right: 20px;
+    }
+    .first-detail{
+        margin-left: 20px;
+        color: white;
+    }
+    #hours{
+        font-size: 60px;
+        font-weight: 300;
+        margin-top: 25px;
     }
 }
